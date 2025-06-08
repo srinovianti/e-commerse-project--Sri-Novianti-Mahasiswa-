@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiuPiu | Toko Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #2c3e50; color: white; padding: 1em; }
+        header nav ul { list-style: none; display: flex; gap: 15px; }
+        header nav ul li { position: relative; }
+        header nav ul li a { color: white; text-decoration: none; }
+        .products { display: flex; gap: 20px; flex-wrap: wrap; }
+        .products article { border: 1px solid #ccc; padding: 10px; border-radius: 5px; width: 200px; }
+        .products img { width: 100%; height: auto; }
+        .footer-nav, .newsletter-signup, .social-media, .payment-methods { margin-bottom: 1em; }
+        .info { display : flex; gap: 30px;align-items: flex-start;}
+        .kategori, .tentang-kami { flex: 1; }
+        /* Responsivenees */
+        @media (max-width: 768px) {
+            .products, .info { flex-direction: column; align-items: center; }
+            header nav ul { flex-direction: column; align-items: flex-start; }
+        }
+
+        @media (max-width: 480px) {
+            .products article { width: 90%; }
+            .user-links { display: flex; flex-direction: column; gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">
+                <a href="#"><img src="IMAGE/WhatsApp Image 2025-06-03 at 13.00.46_70d4a7aa.jpg" alt="Logo" height="50"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Keranjang</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="user-links">
+                <a href="#">Login</a>
+                <a href="#">🛒 (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigasi Breadcrumb (opsional) -->
+    <nav class="breadcrumbs" style="padding: 10px; background-color: #f0f0f0;">
+        <a href="#">Home</a> &gt; <span>Beranda</span>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding: 20px;">
+        <!-- Produk Terbaru -->
+        <section>
+            <h2>Produk Terbaru</h2>
+            <div class="products">
+                <article>
+                    <h3>Buku catatan</h3>
+                    <img src="IMAGE/Buku catatan.jpg" alt="Buku catatan">
+                    <p>Cocok untuk mencatat segala bentuk tulisan di keseharian kalian.</p>
+                    <p>Harga: Rp10.000</p>
+                </article>
+                <article>
+                    <h3>Pulpen</h3>
+                    <img src="IMAGE/pulpen cute.jpeg" alt="Pulpen">
+                    <p>Pulpen yang dirancang dengan desain yang unik dan menampilkan karakter kartun.</p>
+                    <p>Harga: Rp5.000</p>
+                </article>
+                <article>
+                    <h3>Tempat pensil</h3>
+                    <img src="IMAGE/tempat pensil.jpeg" alt="Tempat pensil">
+                    <p>Muatan besar dan tahan air.</p>
+                    <p>Harga: Rp15.000</p>
+                </article>
+                <article>
+                    <h3>Tas</h3>
+                    <img src="IMAGE/Tas.jpg" alt="Tas">
+                    <p>Tas dengan desain simpel namun elegant,cocok untuk dibawa dalam berbagai acara.</p>
+                    <p>Harga: Rp99.000</p>
+                </article>
+                <article>
+                    <h3>Sepatu</h3>
+                    <img src="IMAGE/Sepatu.jpg" alt="Sepatu">
+                    <p>Gaya yang simpel sangat cocok digunakan untuk sekolah.</p>
+                    <p>Harga: Rp145.000</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kategori dan Tentang Kami -->
+        <section class="info">
+            <div class="kategori">
+                <h2>Kategori</h2>
+                <ul>
+                    <li>Pakaian</li>
+                    <li>Elektronik</li>
+                    <li>Aksesoris</li>
+                    <li>Rumah Tangga</li>
+                    <li>Sepatu</li>
+                </ul>
+            </div>
+            <div class="tentang-kami">
+                <h2>Tentang Kami</h2>
+                <p>PiuPiu adalah toko online yang menyediakan berbagai produk kebutuhan sehari-hari dengan harga terjangkau dan kualitas terbaik. Kami berkomitmen memberikan pelayanan cepat dan pengalaman belanja yang menyenangkan.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#" style="color: white; margin-right: 15px;">Tentang Kami</a>
+            <a href="#" style="color: white; margin-right: 15px;">Kontak</a>
+            <a href="#" style="color: white; margin-right: 15px;">Kebijakan Privasi</a>
+            <a href="#" style="color: white;">Syarat & Ketentuan</a>
+        </div>
+        <div class="newsletter-signup">
+            <h3>Berlangganan Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Masukkan email Anda">
+                <button type="submit">Berlangganan</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="IMAGE/Facebook_Logo_2023.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="IMAGE/pngimg.com - twitter_PNG3.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="IMAGE/logo instagram.jpeg" alt="Instagram" width="30"></a>
+        </div>
+        <div class="payment-methods">
+            <img src="IMAGE/logo tulisan dana.png" alt="Dana" width="50">
+            <img src="IMAGE/bca-bank-central-asia-logo-png_seeklogo-399949.png" alt="BCA" width="50">
+            <img src="IMAGE/logo mandiri.png" alt="Mandiri" width="50">
+        </div>
+    </footer>
+</body>
+</html>
